@@ -1,0 +1,22 @@
+# Arquivos temporários e backups
+*.tmp
+*.swp
+*.save
+*.bkp
+
+# Configurações locais e histórico
+.bash_history
+.bash_profile
+.bashrc
+.git-credentials
+.gitconfig
+
+# Diretórios de ferramentas
+VirtualBox/
+docker/
+.vscode/
+.nuget/
+.terraform.d/
+cache/
+config/
+chocolatey/
