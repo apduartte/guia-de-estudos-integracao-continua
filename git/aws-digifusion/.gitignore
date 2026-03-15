@@ -1,22 +1,112 @@
-# Arquivos temporários e backups
+###############################################################################
+# PADRÃO CORPORATIVO DE IGNORO DE ARQUIVOS - VISUAL STUDIO / .NET / DEVOPS
+# Fonte de referência: https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+###############################################################################
+
+# ARQUIVOS DE USUÁRIO (configurações locais e temporárias)
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.env
+*.userprefs
+mono_crash.*
+
+# RESULTADOS DE COMPILAÇÃO
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]*/
+bld/
+[Oo]bj/
+[Oo]ut/
+[Ll]og*/
+**/[Bb]in/*
+
+# CACHE E CONFIGURAÇÕES DO VISUAL STUDIO
+.vs/
+Generated\ Files/
+*.VisualState.xml
+*.DotSettings.user
+
+# RESULTADOS DE TESTES
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage*
+*.coveragexml
+nunit-*.xml
+BenchmarkDotNet.Artifacts/
+
+# ARTEFATOS DE BUILD E DEPLOY
+artifacts/
+publish/
+PublishScripts/
+*.pubxml
+*.publishproj
+*.azurePubxml
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# SAÍDA DE PROJETOS ESPECIAIS
+AppPackages/
+BundleArtifacts/
+*.appx*
+*.appxbundle
+*.appxupload
+*.msi
+*.msix
+*.msm
+*.msp
+*.cab
+
+# ARQUIVOS DE BANCO DE DADOS
+*.mdf
+*.ldf
+*.ndf
+
+# ARQUIVOS DE LOG, BACKUP E TEMPORÁRIOS
+*.log
+*.tlog
 *.tmp
 *.swp
 *.save
 *.bkp
 
-# Configurações locais e histórico
+# CONFIGURAÇÕES LOCAIS E HISTÓRICO
 .bash_history
 .bash_profile
 .bashrc
 .git-credentials
 .gitconfig
 
-# Diretórios de ferramentas
+# DIRETÓRIOS DE FERRAMENTAS E DEPENDÊNCIAS
+node_modules/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 VirtualBox/
 docker/
-.vscode/
 .nuget/
 .terraform.d/
 cache/
 config/
 chocolatey/
+
+# HISTÓRICO LOCAL
+.history/
+.vshistory/
+**/.localhistory/
+
+###############################################################################
+# FIM DO PADRÃO DE IGNORO
+###############################################################################
